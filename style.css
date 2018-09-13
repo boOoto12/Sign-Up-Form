@@ -1,0 +1,244 @@
+/*
+   color#1: #C56175
+   color#2: #36485F
+ */
+/* global style */
+*
+{
+   box-sizing: border-box;
+}
+
+body
+{
+   margin: 0;
+   background-color: #C56175;
+   height: 794px;
+   font-family: 'Oxygen', sans-serif;
+}
+/* global style */
+
+/* start card */
+section
+{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;;
+   align-items: center;
+}
+/* start card */
+/* start main */
+main
+{
+   width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    max-height: 660px;
+    /* background-color: #FFF; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* margin-top: -330px; */
+    /* margin-left: -500px; */
+    border-radius: 10px
+}
+
+main .left
+{
+   float: left;
+   width: 50%;
+   height: 100%;
+   background-image: linear-gradient(to bottom, #6fe1cb, #50c2b8);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   color: #FFF
+}
+
+main .left p
+{
+   text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 7rem 0 0 10%;
+    text-align: center;
+    font-weight: 300;
+    width: 80%;
+}
+
+main .left img
+{
+   width: 100%;
+   height: 57%;
+}
+
+main .right
+{
+   position: relative;
+   float: left;
+   width: 50%;
+   height: 100%;
+   background-image: linear-gradient(to bottom, #374961, #212d3f);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   color: #FFF
+}
+
+main .right .buttons
+{
+   position: absolute;
+    top: 20px;
+    right: 15px;
+}
+main .right button[name="sign up"],
+main .right button[name="sign in"]
+{
+   padding: 7px 20px;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+}
+
+main .right button[name="sign up"]
+{
+   background-color: #4c5d72;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   margin-right: -4px
+}
+
+main .right button[name="sign in"]
+{
+   background-image: linear-gradient(to bottom, #6fe1cb,#50c2b8);
+   border: 0;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   box-shadow: 3px 5px 8px 1px #222e40;
+}
+
+main .right .container
+{
+   width: 80%;
+   margin-left: 10%;
+   position: absolute;;
+   top: 50%;
+   margin-top: -225px
+}
+
+main .right h2
+{
+   font-size: 2rem;
+   color: #aaa;
+   font-weight: 100
+}
+
+main .right h2 span
+{
+   color: #FFF;
+   position: relative;
+}
+
+main .right h2 span::after
+{
+   content: "";
+   position: absolute;
+   bottom: -12px;
+   right: 0;
+   width: 105px;
+   height: 2px;
+   background-color: #6CDFCA;
+}
+
+main .right form legend
+{
+   text-transform: uppercase;
+   font-weight: 100
+}
+
+main .right form input:not([type="checkbox"])
+{
+   background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    width: 90%;
+    padding: 10px 0;
+    margin-bottom: 2rem;
+    outline: 0
+}
+
+main .right form span:not(:last-child)
+{
+   color: #aaa
+}
+
+main .right form span:last-child
+{
+   position: relative;
+}
+
+main .right .container form span:last-child::after
+{
+   content: "";
+   position: absolute;;
+   bottom: -8px;
+   left: 0;
+   width: 115px;
+   height: 2px;
+   background-color: #6CDFCA
+}
+main .right button[name="last-sign-up"]
+{
+   padding: 13px 45px;
+    border: 0;
+    border-radius: 20px;
+    margin: 3rem 1rem 0 0;
+    background-image: linear-gradient(to bottom, #6fe1cb,#50c2b8);
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 3px 5px 8px 1px #222e40;
+}
+
+main .right .container span[name="last"]
+{
+   color: #aaa;
+   position: relative;
+}
+
+main .right .container span[name="last"]::after
+{
+   content: "";
+   position: absolute;;
+   bottom: -8px;
+   left: 0;
+   width: 153px;
+   height: 2px;
+   opacity: .4;
+   background-color: #6CDFCA
+}
+
+main .right .container span[name="last"]:hover :
+{
+
+}
+
+/* Start Media Query */
+
+@media(max-width: 992px)
+{
+
+   main
+   {
+      max-width: 400px
+   }
+   main .left
+   {
+      display: none;
+   }
+
+   main .right
+   {
+      width: 100%;
+      border-radius: 10px;
+   }
+}
+/* End Media Query */
